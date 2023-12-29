@@ -1,5 +1,3 @@
-import ctypes
-
 # v26
 
 
@@ -84,6 +82,3 @@ if __name__ == "__main__":
         insert = add_el.value
 
     print(linkList.stringInOrder())
-
-
-# ctypes.cast(id(a), ctypes.py_object).value
