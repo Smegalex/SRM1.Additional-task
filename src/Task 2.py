@@ -47,6 +47,7 @@ class LinkedList:
                 el.add_next(old_next)
                 self.elements[curr_id] = el
                 return
+        print("Insertion value not found.")
 
     def toPrint(self):
         for key, el in self.elements.items():
@@ -71,11 +72,12 @@ if __name__ == "__main__":
         el = LinkedList_element(el)
         linkList.add_next_el(el)
 
+    linkList.toPrint()
     print(linkList.stringInOrder())
 
     add_str = "HAPPY NEW YEAR!"
     add_arr = add_str.split()
-    insert = "cadet"
+    insert = "snowman"
     for add_el in add_arr:
         add_el = LinkedList_element(add_el)
         linkList.insert_el(add_el, insert)
